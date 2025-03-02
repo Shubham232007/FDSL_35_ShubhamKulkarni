@@ -132,3 +132,117 @@ void display() {
         printf("ID:%d\n NAME:%s\n AUTHOR:%s\n PRICE:%d\n", b[i].ID, b[i].name, b[i].author, b[i].price);
     }
 }
+----------------------------------------------------------------------------------------------------------------------------
+MENU
+1. Insert Book
+2. Delete Book
+3. Modify Book
+4. Display Book
+5. Exit
+Enter your choice: 1
+Enter the number of Books to insert:3
+
+Enter the details of books:
+
+Book 1:
+Enter the ID: 101
+Enter the Name: letusc
+Enter the Author:yashwantkanetkar
+Enter the Price: 335
+
+Book 2:
+Enter the ID: 102
+Enter the Name: cprogramming
+Enter the Author:dennisritche
+Enter the Price: 334
+
+Book 3:
+Enter the ID: 103
+Enter the Name: cprimerplus
+Enter the Author:shubham
+Enter the Price: 336
+
+Books Record Inserted Successfully.
+MENU
+1. Insert Book
+2. Delete Book
+3. Modify Book
+4. Display Book
+5. Exit
+Enter your choice: 4
+ID:101
+ NAME:letusc
+ AUTHOR:yashwantkanetkar
+ PRICE:335
+ID:102
+ NAME:cprogramming
+ AUTHOR:dennisritche
+ PRICE:334
+ID:103
+ NAME:cprimerplus
+ AUTHOR:shubham
+ PRICE:336
+MENU
+1. Insert Book
+2. Delete Book
+3. Modify Book
+4. Display Book
+5. Exit
+Enter your choice: 2
+Enter the ID of the Book to delete: 102
+Books Record Deleted Successfully.
+MENU
+1. Insert Book
+2. Delete Book
+3. Modify Book
+4. Display Book
+5. Exit
+Enter your choice: 4
+ID:101
+ NAME:letusc
+ AUTHOR:yashwantkanetkar
+ PRICE:335
+ID:103
+ NAME:cprimerplus
+ AUTHOR:shubham
+ PRICE:336
+MENU
+1. Insert Book
+2. Delete Book
+3. Modify Book
+4. Display Book
+5. Exit
+Enter your choice: 3
+Enter the ID of the Book to modify: 101
+
+What do you want to modify?
+1.Book ID
+2.Name
+3.Author
+4.Price
+Enter your choice:2
+Enter the new book name: cprogramming
+Name Updated Sucessfully!MENU
+1. Insert Book
+2. Delete Book
+3. Modify Book
+4. Display Book
+5. Exit
+Enter your choice: 4
+ID:101
+ NAME:cprogramming
+ AUTHOR:yashwantkanetkar
+ PRICE:335
+ID:103
+ NAME:cprimerplus
+ AUTHOR:shubham
+ PRICE:336
+MENU
+1. Insert Book
+2. Delete Book
+3. Modify Book
+4. Display Book
+5. Exit
+Enter your choice: 5
+Exiting the program.
+=== Code Execution Successful ===
