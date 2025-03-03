@@ -106,4 +106,107 @@ int main() {
 
     return 0;
 }
+--------------------------------------------------------------------------------------------------------------------
+
+Menu:
+1. Insert a new book
+2. Sort books by ID
+3. Sort books by Price
+4. Display all books
+5. Exit
+Enter your choice: 1
+Enter the number of books to insert:3
+
+Enter details of books:
+Enter ID: 101
+Enter Title: letusc
+Enter Author: yashwantkanetkar
+Enter Price: 334
+Enter ID: 105
+Enter Title: cprogramming
+Enter Author: dennisritche
+Enter Price: 778
+Enter ID: 102
+Enter Title: cprimerplus
+Enter Author: shubham
+Enter Price: 226
+Book inserted successfully!
+
+Menu:
+1. Insert a new book
+2. Sort books by ID
+3. Sort books by Price
+4. Display all books
+5. Exit
+Enter your choice: 2
+Books sorted by ID.
+
+Menu:
+1. Insert a new book
+2. Sort books by ID
+3. Sort books by Price
+4. Display all books
+5. Exit
+Enter your choice: 4
+
+Book details are:
+1)
+ID: 101
+Title: letusc
+Author: yashwantkanetkar
+Price: 334.0
+2)
+ID: 102
+Title: cprimerplus
+Author: shubham
+Price: 226.0
+3)
+ID: 105
+Title: cprogramming
+Author: dennisritche
+Price: 778.0
+
+Menu:
+1. Insert a new book
+2. Sort books by ID
+3. Sort books by Price
+4. Display all books
+5. Exit
+Enter your choice: 3
+Books sorted by Price.
+
+Menu:
+1. Insert a new book
+2. Sort books by ID
+3. Sort books by Price
+4. Display all books
+5. Exit
+Enter your choice: 4
+
+Book details are:
+1)
+ID: 102
+Title: cprimerplus
+Author: shubham
+Price: 226.0
+2)
+ID: 101
+Title: letusc
+Author: yashwantkanetkar
+Price: 334.0
+3)
+ID: 105
+Title: cprogramming
+Author: dennisritche
+Price: 778.0
+
+Menu:
+1. Insert a new book
+2. Sort books by ID
+3. Sort books by Price
+4. Display all books
+5. Exit
+Enter your choice: 5
+Exiting program...
+=== Code Execution Successful ===
        
