@@ -59,6 +59,44 @@ void sortPriceselection(struct bookinfo b[], int n) {
         }
     }
 }
+void sortIDinsertion(struct bookinfo b[], int n) {
+    int i, j,k;
+    struct bookinfo temp;
+    for(i=1;i<n;i++)
+     {
+       for(j=0;j<i;j++)
+       {
+          if(b[j].id>b[i].id)
+          {
+            temp=b[i];
+            for(k=i-1;k>=j;k--){
+            b[k+1]=b[k];
+            }
+            b[j]=temp;
+            break;
+      }
+       }     
+   }
+}
+void sortPriceinsertion(struct bookinfo b[], int n) {
+    int i, j,k;
+    struct bookinfo temp;
+    for(i=1;i<n;i++)
+     {
+       for(j=0;j<i;j++)
+       {
+          if(b[j].price>b[i].price)
+          {
+            temp=b[i];
+            for(k=i-1;k>=j;k--){
+            b[k+1]=b[k];
+            }
+            b[j]=temp;
+            break;
+      }
+       }     
+   }
+}
 
 void insertBook(struct bookinfo b[]) {
     int a,i;
@@ -118,12 +156,15 @@ int main() {
             case 2:
                    printf("1. sort by bubble sort\n");
                    printf("2. sort by Selection sort\n");
+                   printf("3. sort by insertion sort\n");
                    printf("Enter your choice:");
                    scanf("%d",&c);
                    switch(c){
                      case 1:sortIDbubble(b,n);
                      break;
                      case 2:sortIDselection(b,n);
+                       break;
+                     case 3:sortIDinsertion(b,n);
                        break;
                      default:printf("Wrong choice");
                      }
@@ -132,12 +173,15 @@ int main() {
             case 3:
                    printf("1. sort by bubble sort\n");
                    printf("2. sort by Selection sort\n");
+                   printf("3. sort by insertion sort\n");
                    printf("Enter your choice:");
                    scanf("%d",&e);
                    switch(e){
                      case 1:sortPricebubble(b,n);
                      break;
                      case 2:sortPriceselection(b,n);
+                       break;
+                     case 3:sortPriceinsertion(b,n);
                        break;
                      default:printf("Wrong choice");
                      }
