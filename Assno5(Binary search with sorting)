@@ -1,0 +1,118 @@
+#include<stdio.h>
+int main()
+{
+  int n=0,key,i;
+  printf("Enter the size of array:");
+  scanf("%d",&n);
+  int a[n];
+  printf("Enter array elements:");
+   for(i=0;i<n;i++)
+   {
+     scanf("%d",&a[i]);
+     }
+     
+     void sortbubble(int a[], int n) {
+    int i, j;
+    int temp;
+    for (i = 0; i < n - 1; i++) {
+    for (j = 0; j < n - 1 - i; j++) {
+      if (a[j] > a[j + 1]) {
+             temp = a[j];
+             a[j] = a[j + 1];
+             a[j + 1] = temp;
+            }
+        }
+    }
+   
+}
+     
+     void sortselection(int a[], int n) {
+    int i, j;
+    int temp;
+    for (i = 0; i < n - 1; i++) {
+    for (j = i; j < n - 1; j++) {
+      if (a[i] > a[j + 1]) {
+             temp = a[i];
+             a[i] = a[j + 1];
+             a[j + 1] = temp;
+            }
+        }
+    }
+   
+}
+     void sortinsertion(int a[], int n) {
+    int i, j,k;
+    int temp;
+    for(i=1;i<n;i++)
+     {
+       for(j=0;j<i;j++)
+       {
+          if(a[j]>a[i])
+          {
+            temp=a[i];
+            for(k=i-1;k>=j;k--){
+            a[k+1]=a[k];
+            }
+            a[j]=temp;
+            break;
+      }
+       }     
+   }
+  
+}
+void searchbinary(int a[],int n){
+    printf("Enter element to search:");
+    scanf("%d",&key);
+    int low=0,high=n-1,mid,found=0;
+    while(low<=high){
+    mid=(low+high)/2;
+      if(a[mid]==key)
+      {
+        found=1;
+        printf("Element %d found at position %d\n",key,mid);
+        break;
+        }
+        else if(a[mid]>key){
+        high=mid-1;
+        }
+        else{
+           low=mid+1;
+           }
+    }
+    if(low>high){
+       printf("Element %d is not found!",key);
+    }
+    }
+
+     int ch;
+     do {
+        printf("\nMenu:\n");
+        printf("1. sort by bubble sort\n");
+      printf("2. sort by selection sort\n");
+      printf("3. sort by insertion sort\n");
+      printf("4. search element by binary search\n");
+      printf("5.Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &ch);
+
+        switch (ch) {
+            case 1:
+                sortbubble(a,n);
+                break;
+            case 2:sortselection(a, n);
+                    
+                break;
+            case 3:sortinsertion(a, n);
+                  break;
+            case 4:searchbinary(a,n);
+            break;
+            case 5:
+                printf("Exiting program...\n");
+                break;
+            default:
+                printf("Wrong choice! Please enter a valid option.\n");
+        }
+    } while (ch != 5);
+     
+    return 0;
+    }
